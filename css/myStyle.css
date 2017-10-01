@@ -1,0 +1,27 @@
+#main {
+    width: 800px;
+    position: relative;
+}
+#mainImg {
+    margin: 0;
+    width: 400px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    left: 200px;
+    top: 0px;
+}
+nav {
+    height: 100px;
+    width: 800px;
+    position: absolute;
+    top: 500px;
+    border: 1px solid black;
+}
+.modes {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid red;
+}
