@@ -1,6 +1,9 @@
 // JavaScript Document
 function onInit() {
 	itemIndex = -1;
+	document.oncontextmenu = function() {
+		return false;
+	}
 }
 
 function lastIndexPerMode() {
@@ -118,9 +121,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 	onSwipe.add(new Hammer.Swipe({ direction: Hammer.DIRECTION_ALL, threshold: 0 }));
 	onSwipe.add(new Hammer.Tap());
-	onSwipe.on('swipeleft swiperight swipeup swipedown tap', function (ev) {
+	onSwipe.add(new Hammer.Press());
+	onSwipe.on('swipeleft swiperight swipeup swipedown tap press', function (ev) {
 		console.log(ev.type);
 		switch (ev.type) {
+			case 'press':
 			case 'tap':
 			case 'swipedown':
 				nextItemDown();
