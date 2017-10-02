@@ -1,6 +1,8 @@
 #main {
     width: 800px;
+    height: 400px;
     position: relative;
+    border: 1px solid black;
 }
 #mainImg {
     margin: 0;
@@ -15,8 +17,7 @@ nav {
     height: 100px;
     width: 800px;
     position: absolute;
-    top: 500px;
-    border: 1px solid black;
+    top: 425px;
 }
 .modes {
     height: 100px;
