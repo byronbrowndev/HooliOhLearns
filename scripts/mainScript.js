@@ -11,7 +11,7 @@ function lastIndexPerMode() {
 		case NUMBERS:
 			return 4;
 		case ALPHABET:
-			return 2;
+			return 25;
 		case COLORS:
 			return 2;
 	}
@@ -94,7 +94,6 @@ function lastItemRight() {
 }
 
 function changeMode(newMode) {
-	debugger;
 	switch(newMode) {
 		case 'numbers':
 			itemIndex = 0;
@@ -149,6 +148,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		document.getElementById('mainImg').src = MODES[sourceIndex][itemIndex].picture.src;
 		MODES[sourceIndex][itemIndex].sound.play();
 
-		NUMBERS[itemIndex].src;
 	});
 });
