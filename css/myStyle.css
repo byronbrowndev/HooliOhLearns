@@ -1,4 +1,37 @@
-#main {
+html, body { 
+    height: 100%;
+}
+
+#content {
+    height: 85%;
+    overflow: hidden;
+}
+
+#content * {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 15%;
+    overflow: hidden;
+    background-color: greenyellow;
+}
+
+nav * {
+    width: 20%;
+    height: 95%;
+    float: left;
+    margin-left: 10%;
+    background-color: dodgerblue;
+}
+
+/*
+orig css code
+this was the first css that aligns with orig animation code
+
+#content {
     width: 800px;
     height: 400px;
     position: relative;
@@ -18,6 +51,7 @@ nav {
     width: 800px;
     position: absolute;
     top: 425px;
+    border: 1px solid green;
 }
 .modes {
     height: 100px;
@@ -26,3 +60,7 @@ nav {
     display: inline-block;
     border: 1px solid red;
 }
+
+#main {
+    border: 1px solid blue;
+}*/

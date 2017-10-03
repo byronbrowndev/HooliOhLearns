@@ -22,17 +22,18 @@ function nextItemDown() {
 	lastIndex = lastIndexPerMode();
 	if (itemIndex > lastIndex) itemIndex = 0;	
 
-	var img = document.getElementById('mainImg');
-	var pos = -400;
-	var id = setInterval(frame, 1);
-	function frame() {
-		if (pos >= 0) {
-			clearInterval(id);
-		} else {
-			pos+=5;
-			img.style.top = pos + 'px';
-		}
-	}
+	// orig animation code -- goes w/ orig css code
+	// var img = document.getElementById('mainImg');
+	// var pos = -400;
+	// var id = setInterval(frame, 1);
+	// function frame() {
+	// 	if (pos >= 0) {
+	// 		clearInterval(id);
+	// 	} else {
+	// 		pos+=5;
+	// 		img.style.top = pos + 'px';
+	// 	}
+	// }
 }
 
 function nextItemLeft() {
@@ -40,17 +41,18 @@ function nextItemLeft() {
 	lastIndex = lastIndexPerMode();
 	if (itemIndex > lastIndex) itemIndex = 0;	
 
-	var img = document.getElementById('mainImg');
-	var pos = 800;
-	var id = setInterval(frame, 1);
-	function frame() {
-		if (pos <= 200) {
-			clearInterval(id);
-		} else {
-			pos-=5;
-			img.style.left = pos + 'px';
-		}
-	}
+	// orig animation code -- goes w/ orig css code
+	// var img = document.getElementById('mainImg');
+	// var pos = 800;
+	// var id = setInterval(frame, 1);
+	// function frame() {
+	// 	if (pos <= 200) {
+	// 		clearInterval(id);
+	// 	} else {
+	// 		pos-=5;
+	// 		img.style.left = pos + 'px';
+	// 	}
+	// }
 }
 
 function lastItemUp() {
@@ -58,17 +60,18 @@ function lastItemUp() {
 	lastIndex = lastIndexPerMode();
 	if (itemIndex < 0) itemIndex = lastIndex;	
 
-	var img = document.getElementById('mainImg');
-	var pos = 400;
-	var id = setInterval(frame, 1);
-	function frame() {
-		if (pos <= 0) {
-			clearInterval(id);
-		} else {
-			pos-=5;
-			img.style.top = pos + 'px';
-		}
-	}
+	// orig animation code -- goes w/ orig css code
+	// var img = document.getElementById('mainImg');
+	// var pos = 400;
+	// var id = setInterval(frame, 1);
+	// function frame() {
+	// 	if (pos <= 0) {
+	// 		clearInterval(id);
+	// 	} else {
+	// 		pos-=5;
+	// 		img.style.top = pos + 'px';
+	// 	}
+	// }
 }
 
 function lastItemRight() {
@@ -76,17 +79,18 @@ function lastItemRight() {
 	lastIndex = lastIndexPerMode();
 	if (itemIndex < 0) itemIndex = lastIndex;	
 
-	var img = document.getElementById('mainImg');
-	var pos = -400;
-	var id = setInterval(frame, 1);
-	function frame() {
-		if (pos >= 200) {
-			clearInterval(id);
-		} else {
-			pos+=5;
-			img.style.left = pos + 'px';
-		}
-	}
+	// orig animation code -- goes w/ orig css code
+	// var img = document.getElementById('mainImg');
+	// var pos = -400;
+	// var id = setInterval(frame, 1);
+	// function frame() {
+	// 	if (pos >= 200) {
+	// 		clearInterval(id);
+	// 	} else {
+	// 		pos+=5;
+	// 		img.style.left = pos + 'px';
+	// 	}
+	// }
 }
 
 function changeMode(newMode) {
@@ -114,7 +118,7 @@ var itemIndex = 0;
 
 document.addEventListener("DOMContentLoaded", function (event) {
 
-	var el = document.getElementById('main');
+	var el = document.getElementById('content');
 
 	var onSwipe = new Hammer.Manager(el);
 	var lastIndex;
